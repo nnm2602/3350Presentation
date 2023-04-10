@@ -1,0 +1,40 @@
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+CREATE MEMORY TABLE PUBLIC.recipes (recipeName VARCHAR(50) NOT NULL PRIMARY KEY, tutorial VARCHAR(500), vegCount INTEGER, proteinCount INTEGER)
+CREATE MEMORY TABLE PUBLIC.ingredients (ingredientName VARCHAR(50) NOT NULL PRIMARY KEY, type VARCHAR(50))
+CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
+ALTER USER SA SET LOCAL TRUE
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
+GRANT DBA TO SA
+SET WRITE_DELAY 20
+SET FILES SCALE 32
+SET SCHEMA PUBLIC
+INSERT INTO PUBLIC.ingredients VALUES ('Carrots', 'vegetable')
+INSERT INTO PUBLIC.ingredients VALUES ('Tomatoes', 'vegetable')
+INSERT INTO PUBLIC.ingredients VALUES ('Onions', 'vegetable')
+INSERT INTO PUBLIC.ingredients VALUES ('Pumpkin', 'vegetable')
+INSERT INTO PUBLIC.ingredients VALUES ('Beef', 'protein')
+INSERT INTO PUBLIC.ingredients VALUES ('Pork', 'protein')
+INSERT INTO PUBLIC.ingredients VALUES ('Chicken', 'protein')
+INSERT INTO PUBLIC.ingredients VALUES ('Fish', 'protein')
+INSERT INTO PUBLIC.recipes VALUES ('recipe 4', 'Dice [vegetable1], saute with [protein1], add [vegetable2] and simmer with [vegetable3]', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 5', 'Chop [vegetable1] and [vegetable2], mix with [protein1], sprinkle with [vegetable3], and bake', 2, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 6', 'Mince [vegetable1] and [vegetable2], mix with [protein1], add [vegetable3] and cook until tender', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 7', 'Saute [vegetable1] with [protein1], mix in [vegetable2] and [vegetable3], and serve with [vegetable4]', 4, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 8', 'Combine [vegetable1], [vegetable2], and [protein1], and grill until charred, then serve with [vegetable3]', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 9', 'Cut [vegetable1] and [vegetable2] into thin slices, mix with [protein1], and stir-fry until tender', 2, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 10', 'Saute [vegetable1] and [vegetable2] with [protein1], then add [vegetable3] and [vegetable4], and cook until tender', 4, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 11', 'Chop [vegetable1], [vegetable2], and [vegetable3], mix with [protein1]', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 12', 'Dice [vegetable1], mix with [protein1], and add [vegetable2] and [vegetable3], simmer until tender', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 13', 'Cut [vegetable1] into strips, mix with [protein1] and [vegetable2], and fry until crispy', 2, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 14', 'Grill [vegetable1] and [vegetable2], mix with [protein1], and serve with [vegetable3]', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 15', 'Saute [vegetable1], [vegetable2], and [vegetable3] with [protein1], and serve with [vegetable4]', 4, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 16', 'Combine [vegetable1], [vegetable2], [vegetable3], and [protein1], and bake until tender', 4, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 17', 'Chop [vegetable1], [vegetable2], and [vegetable3], mix with [protein1], and serve with [vegetable4]', 3, 1),
+INSERT INTO PUBLIC.recipes VALUES ('recipe 18', 'Dice [vegetable1], saute with [protein1], mix in [vegetable2] and [vegetable3], and simmer until tender', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 19', 'Mince [vegetable1], mix with [protein1], and add [vegetable2] and [vegetable3], cook until tender', 3, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 20', 'Mix [protein1], [protein2], [protein3], [vegetable1], [vegetable2], and [vegetable3] together. Top with your favorite dressing.', 3, 3)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 21', 'Spread tomato sauce on a pizza crust. Top with [protein1], [protein2]. Add [vegetable1], [vegetable2], and [vegetable3] if desired. Sprinkle with cheese and bake in the oven.', 3, 2)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 22', 'Cut [vegetable1], [vegetable2], and [vegetable3] into small pieces. Heat oil in a pan and add [protein1] and [protein2]. Cook until browned. Add vegetables and cook until tender. Serve with rice.', 3, 2)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 23', 'Form [protein1] into a patty and cook on a grill or stovetop. Serve on a bun with your favorite toppings.', 0, 1)
+INSERT INTO PUBLIC.recipes VALUES ('recipe 24', 'Place [vegetable1] between two slices of bread with sliced cheese. Grill on a pan until cheese is melted.', 1, 0)

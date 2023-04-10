@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Software Savants</string>
+    <string name="select_your_ingredients">Select your ingredients</string>
+    <string name="generate_recipe">Generate Recipe</string>
+    <string name="select_vegetable">Vegetables</string>
+    <string name="select_protein">Proteins</string>
+    <string name="carrot_checkbox">Carrot</string>
+    <string name="onion_checkbox">Onion</string>
+    <string name="tomato_checkbox">Tomato</string>
+    <string name="garlic_checkbox">Garlic</string>
+    <string name="beef_checkbox">Beef</string>
+    <string name="chicken_checkbox">Chicken</string>
+    <string name="pork_checkbox">Pork</string>
+    <string name="fish_checkbox">Fish</string>
+    <string name="select_category">Select a category:</string>
+</resources>

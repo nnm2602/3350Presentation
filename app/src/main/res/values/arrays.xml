@@ -1,0 +1,21 @@
+<resources>
+    <string-array name="category_array">
+        <item>@string/select_category</item>
+        <item>@string/select_vegetable</item>
+        <item>@string/select_protein</item>
+    </string-array>
+
+    <string-array name="vegetable_array">
+        <item>@string/carrot_checkbox</item>
+        <item>@string/onion_checkbox</item>
+        <item>@string/tomato_checkbox</item>
+        <item>@string/garlic_checkbox</item>
+    </string-array>
+
+    <string-array name="protein_array">
+        <item>@string/beef_checkbox</item>
+        <item>@string/chicken_checkbox</item>
+        <item>@string/pork_checkbox</item>
+        <item>@string/fish_checkbox</item>
+    </string-array>
+</resources>
