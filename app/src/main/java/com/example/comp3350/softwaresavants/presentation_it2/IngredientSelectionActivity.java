@@ -9,15 +9,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.Toast;
+
 import android.widget.LinearLayout;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 
 import com.example.comp3350.softwaresavants.Objects.Ingredient;
 import com.example.comp3350.softwaresavants.application.Services;
 import com.example.comp3350.softwaresavants.persistence.IngredientPersistence;
-import com.example.comp3350.softwaresavants.persistence.RecipePersistence;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +66,7 @@ public class IngredientSelectionActivity extends AppCompatActivity {
         List<Ingredient> proteinsObj = ingredientDatabase.getAllVegetables();
         List<String> proteins = new ArrayList<String>();
         for (Ingredient pro : proteinsObj) {
-            vegetables.add(pro.getIngredientName());
+            proteins.add(pro.getIngredientName());
         }
         for (String protein : proteins) {
             CheckBox checkBox = new CheckBox(this);
